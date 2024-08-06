@@ -1,11 +1,17 @@
 let collapsibles = document.querySelectorAll(".collapsible");
-const icons = document.getElementById('toggleIcon');
 
 
-collapsibles.forEach((item,icon) =>
+collapsibles.forEach((item) =>
   item.addEventListener("click", function () {
     item.classList.toggle("collapsible--expanded");
+   
+    const icon = item.querySelector(".toggleIcon");
 
+    if (item.classList.contains("collapsible--expanded")) {
+        icon.src = 'chevron-.png'; 
+    } else {
+        icon.src = 'chevron +.png'; 
+    }
   })
 );
 
@@ -21,22 +27,4 @@ function hideSideBar(){
 }
 
 
-// document.getElementById('toggleBtn').addEventListener('click', function() {
-//     const content = document.getElementById('toggleContent');
-//     const icon = document.getElementById('toggleIcon');
-    
-//     if (content.style.display === 'none' || content.style.display === '') {
-//         content.style.display = 'block'; 
-//         icon.src = './images/chevron +.png'; 
-//     } else {
-//         content.style.display = 'none';
-//         icon.src = './images/chevron-.png'; 
-//     }
-// });
 
-
-let toggle = document.getElementById('toggleBtn');
-
-toggle.addEventListener('click', function(){
-
-});

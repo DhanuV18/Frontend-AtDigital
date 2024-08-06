@@ -699,3 +699,7 @@ ul li a{
 
 /* Hamburder */
 
+.minus{
+    height: 0.3rem;
+    width: 1.8rem;
+}
