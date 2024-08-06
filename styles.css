@@ -351,8 +351,9 @@ ul li a{
 }
 
 @media screen and (max-width: 768px){
-    .line{
-        margin: 2rem;
+    .line hr{
+       display: none;
+ 
     }
 }
 
