@@ -346,21 +346,17 @@ ul li a{
 
 .line hr {
     margin: 1rem;
-    min-width: 630px;
+    width: 250px;
     display: inline-block; 
     border: 1px solid #ffffff; 
 }
 
-@media screen and (max-width: 768px){
-    .line hr{
-       display: none;
- 
-    }
-    hr{
-        margin: 0 auto;
-        min-width: 5px;
-
-
+@media screen and (min-width: 768px){
+    .line hr {
+        margin: 1rem;
+        min-width: 630px;
+        display: inline-block; 
+        border: 1px solid #ffffff; 
     }
 }
 
